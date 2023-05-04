@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import image from "../assets/img/doguito.svg";
 import "../assets/css/componentes/header.css";
 const Header = () => {
@@ -7,32 +8,32 @@ const Header = () => {
                 <span className="menu-hamburguer__icon"></span>
             </div>
             <div className="header-container">
-                <a href="/" className="flex flex--center">
+                <Link to="/" className="flex flex--center">
                     <img className="header__logo" src={image} alt="doguito" />
                     <h1 className="header__title">PepShop</h1>
-                </a>
+                </Link>
             </div>
             <nav className="menu-header">
                 <ul className="menu-items">
                     <li>
-                        <a className="menu-item menu-item--entrar" href="#">
+                        <Link className="menu-item menu-item--entrar" to="#">
                             Entrar
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a className="menu-item" href="#">
+                        <Link className="menu-item" to="#">
                             Productos
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a className="menu-item" href="/">
+                        <Link className="menu-item" to="/">
                             Blog
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a className="menu-item" href="/sobre">
+                        <Link className="menu-item" to="/sobre">
                             Sobre
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </nav>
