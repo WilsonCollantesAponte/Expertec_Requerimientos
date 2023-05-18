@@ -3,6 +3,7 @@ import "../assets/css/blog.css";
 import { buscar } from "../api/api";
 import ListCategories from "../components/ListCategories";
 import ListPost from "../components/ListPost";
+import Subcategoria from "./Subcategoria";
 import {
     useParams,
     Routes,
@@ -44,6 +45,7 @@ const Categoria = () => {
                     path="/"
                     element={<ListPost url={`/posts?categoria=${id}`} />}
                 />
+                <Route path="/:subcategoria" element={<Subcategoria />} />
             </Routes>
         </>
     );
