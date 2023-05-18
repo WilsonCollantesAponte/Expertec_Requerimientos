@@ -1,14 +1,15 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { buscar } from "../api/api";
 import "../assets/css/componentes/card.css";
 
 const Post = ({ url }) => {
     const [post, setPosts] = useState({});
     const { id } = useParams();
+    const navigate = useNavigate();
 
     useEffect(() => {
-        buscar(`/posts/${id}`, setPosts);
+        buscar(`/posts/${id}`, setPosts).catch(() => navigate("/not-fount"));
     }, [id]);
     return (
         <main className="container flex flex--center">
