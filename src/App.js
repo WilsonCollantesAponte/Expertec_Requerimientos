@@ -1,6 +1,7 @@
 import "./assets/css/base/base.css";
 import "./assets/css/componentes/card.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Sobre from "./pages/Sobre";
 import Page404 from "./pages/Page404";
@@ -13,6 +14,7 @@ function App() {
         <Router>
             <Header />
             <Routes>
+            {/* <Route path="/" element={<Login />} /> */}
                 <Route path="/" element={<Home />} />
                 <Route path="/sobre" element={<Sobre />} />
                 <Route path="/posts/:id" element={<Post />} />

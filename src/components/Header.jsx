@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import image from "../assets/img/doguito.svg";
+import image from "../assets/img/logo-expertec.png";
 import "../assets/css/componentes/header.css";
 const Header = () => {
     return (
@@ -9,8 +9,8 @@ const Header = () => {
             </div>
             <div className="header-container">
                 <Link to="/" className="flex flex--center">
-                    <img className="header__logo" src={image} alt="doguito" />
-                    <h1 className="header__title">PepShop</h1>
+                    <img className="header__logo" src={image} alt="expert" />
+                    <h1 className="header__title">EXPERTEC Requerimientos</h1>
                 </Link>
             </div>
             <nav className="menu-header">
@@ -22,12 +22,12 @@ const Header = () => {
                     </li>
                     <li>
                         <Link className="menu-item" to="#">
-                            Productos
+                            Desarrolladores
                         </Link>
                     </li>
                     <li>
                         <Link className="menu-item" to="/">
-                            Blog
+                            Listas
                         </Link>
                     </li>
                     <li>

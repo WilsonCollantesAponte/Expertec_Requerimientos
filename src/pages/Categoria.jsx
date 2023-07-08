@@ -25,7 +25,7 @@ const Categoria = () => {
     return (
         <>
             <div className="container">
-                <h2 className="title-page">Pet Noticias</h2>
+                <h2 className="title-page">Requerimientos</h2>
             </div>
             <ListCategories />
             <ul className="category-list container flex">
