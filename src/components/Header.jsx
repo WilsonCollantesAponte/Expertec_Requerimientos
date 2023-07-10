@@ -17,7 +17,7 @@ const Header = () => {
                 <ul className="menu-items">
                     <li>
                         <Link className="menu-item menu-item--entrar" to="#">
-                            Entrar
+                            Nuevo Requerimiento
                         </Link>
                     </li>
                     <li>
